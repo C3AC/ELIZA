@@ -1,15 +1,14 @@
 from logica import procesar
-from checks import estado
 
 print('░▒▓████████▓▒░▒▓█▓▒░      ░▒▓█▓▒░▒▓████████▓▒░░▒▓██████▓▒░\n░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░ \n░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░    ░▒▓██▓▒░░▒▓█▓▒░░▒▓█▓▒░\n░▒▓██████▓▒░ ░▒▓█▓▒░      ░▒▓█▓▒░  ░▒▓██▓▒░  ░▒▓████████▓▒░\n░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓██▓▒░    ░▒▓█▓▒░░▒▓█▓▒░\n░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░\n░▒▓████████▓▒░▒▓████████▓▒░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░')
 
-print('escribe salir para terminar el programa')
+print('esta lista para hablar contigo \nescribe salir si deseas terminar la conversación')
 
 while True:
     entrada = input('> ')
     if entrada.lower() == 'salir':
         print('Saliendo del programa...')
         break
-    respuesta = procesar(entrada, estado)
+    respuesta = procesar(entrada)
     print(f'> {respuesta}')
 
