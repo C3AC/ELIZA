@@ -38,11 +38,6 @@ PATRONES = [
         "De acuerdo, ¿cómo puedo ayudarte hoy?",
         "Perfecto, ¿qué más tienes en mente?"
     ]),
-    (re.compile(r'eres (.+)', re.IGNORECASE), [
-        "¿Por qué te interesa saber si soy {0}?",
-        "¿Qué te hace pensar que soy {0}?",
-        "¿Cómo te sientes al pensar que soy {0}?"
-    ]),
 ]
 
 SALUDOS = [
